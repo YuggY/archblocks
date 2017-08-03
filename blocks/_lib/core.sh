@@ -22,17 +22,17 @@ MNT=/mnt; TMP=/tmp/archblocks; POSTSCRIPT="/post-chroot.sh"
 # (probably not useful here if initialization script has already used it,
 # but retained here for reference)
 
-_defaultvalue REMOTE https://raw.github.com/altercation/archblocks/master
+_defaultvalue REMOTE https://raw.github.com/yuggy/archblocks/master
 
 # DEFAULT CONFIG VALUES --------------------------------------------------
 
-_defaultvalue HOSTNAME archlinux
+_defaultvalue HOSTNAME arch
 _defaultvalue USERSHELL /bin/bash
 _defaultvalue FONT Lat2-Terminus16
 _defaultvalue FONT_MAP 8859-1_to_uni
 _defaultvalue LANGUAGE en_US.UTF-8
-_defaultvalue KEYMAP us
-_defaultvalue TIMEZONE US/Pacific
+_defaultvalue KEYMAP pt-latin1
+_defaultvalue TIMEZONE Europe/Lisbon
 _defaultvalue MODULES ""
 _defaultvalue HOOKS "base udev autodetect pata scsi sata filesystems usbinput fsck"
 _defaultvalue KERNEL_PARAMS # "quiet" # set/used in FILESYSTEM,INIT,BOOTLOADER blocks
