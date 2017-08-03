@@ -16,11 +16,7 @@ Arch BBS: https://bbs.archlinux.org/viewtopic.php?id=149597
 
 Boot Arch install media (in the example config I expect an EFI boot, but it's trivial to make this work for non EFI):
 
-    # curl -sfL https://raw.github.com/altercation/archblocks/master/install_tau.sh > install.sh; bash install.sh
-
-or in short url form:
-
-    # curl -sfL http://git.io/rQx7Xw > install.sh; bash install.sh
+    # curl -sfL https://raw.github.com/YuggY/archblocks/master/install_ava.sh > install.sh; bash install.sh
 
 (this then sources the blocks of code remotely and configures the system based on the specific blocks called and variables set in in; see below)
 
@@ -53,11 +49,11 @@ Each system I install gets a single config file (the "tau" script in the example
 A config/install script (the only script you need to manually execute) looks like this (actual script I use to install Arch on a Thinkpad x220):
 
     # RESPOSITORY ------------------------------------------------------------
-    REMOTE=https://raw.github.com/altercation/archblocks/dev
+    REMOTE=https://raw.github.com/YuggY/archblocks/dev
     
     # CONFIG -----------------------------------------------------------------
-    HOSTNAME=tau
-    USERNAME=es
+    HOSTNAME=ava
+    USERNAME=yuggy
     USERSHELL=/bin/bash
     FONT=Lat2-Terminus16
     FONT_MAP=8859-1_to_uni
