@@ -58,7 +58,7 @@ sgdisk -c ${PARTITION_CRYPT_ROOT}:"${LABEL_ROOT}" ${INSTALL_DRIVE}
 # format LUKS on root
 
 # let cryptsetup handle password entry, exit after 3 successive failures
-_try_until_success "cryptsetup --cipher=aes-xts-plain --verify-passphrase --key-size=512 luksFormat ${INSTALL_DRIVE}${PARTITION_CRYPT_ROOT}" 3 || exit
+_try_until_success "cryptsetup --cipher=aes-xts-plain64 --verify-passphrase --key-size=512 --iter-time=2000 --use-random luksFormat ${INSTALL_DRIVE}${PARTITION_CRYPT_ROOT}" 3 || exit
 
 # let cryptsetup handle password entry, exit after 3 successive failures
 _try_until_success "cryptsetup luksOpen ${INSTALL_DRIVE}${PARTITION_CRYPT_ROOT} ${LABEL_ROOT_CRYPT}" 3 || exit
