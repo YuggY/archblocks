@@ -18,12 +18,9 @@ Boot Arch install media (in the example config I expect an EFI boot, but it's tr
 
     # loadkeys pt-latin1
     # wifi-menu
-    # curl -sfL https://raw.github.com/YuggY/archblocks/master/T430.sh > T430.sh; bash install.sh
-    
-    or
-    
-    # curl -sfL http://bit.ly/2vtCD9y > T430.sh; bash install.sh
-
+    # curl -sfL https://raw.github.com/YuggY/archblocks/master/T430.sh > T430.sh; bash T430.sh
+    or (smaller url)
+    # curl -sfL http://bit.ly/2vtCD9y > T430.sh; bash T430.sh
  
 (this then sources the blocks of code remotely and configures the system based on the specific blocks called and variables set in in; see below)
 
