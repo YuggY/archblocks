@@ -17,7 +17,7 @@ REMOTE=https://raw.github.com/altercation/archblocks/master
 # CONFIG -----------------------------------------------------------------
 
 HOSTNAME=ava
-USERNAME=YuggY
+USERNAME=yuggy
 USERSHELL=/bin/bash
 FONT=Lat2-Terminus16
 FONT_MAP=8859-1_to_uni
