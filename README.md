@@ -9,15 +9,22 @@ ArchBlocks is a very lightweight framework for creating quick, modular, *non-int
 
 ## WHERE:
 
-Example repo at https://github.com/altercation/archblocks
+Example repo at https://github.com/yuggy/archblocks
 Arch BBS: https://bbs.archlinux.org/viewtopic.php?id=149597
 
 ## EXAMPLE:
 
 Boot Arch install media (in the example config I expect an EFI boot, but it's trivial to make this work for non EFI):
 
-    # curl -sfL https://raw.github.com/YuggY/archblocks/master/install_ava.sh > install.sh; bash install.sh
+    # loadkeys pt-latin1
+    # wifi-menu
+    # curl -sfL https://raw.github.com/YuggY/archblocks/master/T430.sh > T430.sh; bash install.sh
+    
+    or
+    
+    # curl -sfL http://bit.ly/2vtCD9y > T430.sh; bash install.sh
 
+ 
 (this then sources the blocks of code remotely and configures the system based on the specific blocks called and variables set in in; see below)
 
 ## WHAT IT ISN'T:
